@@ -1,0 +1,43 @@
+@import url("../cleanBase.css");
+@import url("../colorVariables.css");
+
+/*ErrorHeader*/
+.ErrorTextHeader {
+	display: flex;
+	flex-direction: row;
+	color: var(--main-red);
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+.ErrorPage {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+	width: inherit;
+	height: inherit;
+}
+
+.ErrorInfoPanel {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--main-red);
+	border: 2px solid var(--main-red);
+	border-radius: 8px;
+	width: 400px;
+}
+
+.ErrorInfoPanel > .ErrorDescription {
+	display: flex;
+	flex-direction: row;
+	width: 400px;
+	padding: 20px 0px 20px 20px;
+	box-sizing: border-box;
+}
+
+.ErrorInfoPanel > .ErrorDescription:not(:last-child) {
+	border-bottom: 1px solid var(--main-red);
+}

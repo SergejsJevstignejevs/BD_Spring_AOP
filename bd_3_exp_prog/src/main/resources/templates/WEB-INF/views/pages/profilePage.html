@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" th:href="@{/css/pages/profilePage.css}"/>
+    <link th:rel="stylesheet" th:href="@{/css/pages/fragments/header.css}"/>
+    <script src="http://localhost:35729/livereload.js"></script>
+  </head>
+  <body>
+    <div th:replace="~{pages/fragments/header :: mainHeader(authentication=${authentication})}"></div>
+    <main class="ProfilePage">
+      <div class="UserProfile" th:object="${appUser}">
+        <p>
+          <span>Username:</span>
+          <span th:text="*{name}"></span>
+        </p>
+        <p>
+          <span>Email:</span>
+          <span th:text="*{email}"></span>
+        </p>
+        <p>
+          <span>Balance:</span>
+          <span th:text="'$' + ${#numbers.formatDecimal(appUser.balance, 1, 'COMMA', 2, 'POINT')}"></span>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

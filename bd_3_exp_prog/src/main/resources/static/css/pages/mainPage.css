@@ -1,0 +1,10 @@
+@import url("../cleanBase.css");
+@import url("../colorVariables.css");
+
+/*Page*/
+.MainPage{
+	display: flex;
+	flex-direction: column;
+	width: inherit;
+	height: inherit;
+}

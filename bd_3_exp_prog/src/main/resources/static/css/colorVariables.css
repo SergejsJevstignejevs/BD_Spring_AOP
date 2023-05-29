@@ -1,0 +1,12 @@
+:root{
+	--main-green: #2ca25f; /* color with a green hue */
+	--main-red: #c0392b;
+	--complementary-red: #ff999980;
+    --complementary-pink: #a02c5f; /* deep shade of pink */
+	--complementary-fuchsia: #a52c6f; /* reddish-purple color */
+    --accent-yellow: #f2e394; /* light shade of yellow */
+	/* --main-forest-green: #2ca25f;
+	--sub-seafoam: #99d8c9;
+	--sub-pale-aqua: #e5f5f9;
+	--silver: #C0C0C0; */
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Loading</title>
+        <link rel="stylesheet" th:href="@{/css/pages/loadingPage.css}"/>
+        <script src="http://localhost:35729/livereload.js"></script>
+        <script>
+          setTimeout(function () {
+            window.location.href = "/main";
+          }, 1500);
+        </script>
+    </head>
+    <body>
+        <main class="LoadingPage">
+            <div class="LoadingMessage">Loading in process...</div>
+            <div class="Circle"></div>
+        </main>
+    </body>
+</html>

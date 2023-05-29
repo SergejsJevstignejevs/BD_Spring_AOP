@@ -1,0 +1,35 @@
+.MainHeader {
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    z-index: 99;
+	background-color: var(--main-green);
+    color: var(--accent-yellow);
+	font-size: 1.5em;
+}
+
+.MainHeader > ul {
+	display: flex;
+	flex-direction: row;
+	line-height: 50px;
+}
+
+.MainHeader > ul > li {
+	display: flex;
+	flex-direction: column;
+	margin: 0 20px 0 20px;
+}
+
+.MainHeader > ul > li:last-child {
+	margin-left: auto;
+}
+
+.MainHeader > ul > li:hover {
+	transform: translateY(-5px);
+	border-bottom: 2px solid var(--accent-yellow);
+}
+
+.MainHeader > ul > li > a {
+	color: var(--accent-yellow);
+	text-decoration: none;
+}

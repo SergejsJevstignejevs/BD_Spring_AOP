@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Error</title>
+        <link rel="stylesheet" th:href="@{/css/errors/errorPage.css}"/>
+        <script src="http://localhost:35729/livereload.js"></script>
+    </head>
+    <body>
+        <main class="ErrorPage">
+            <h1 class="ErrorTextHeader">Something went wrong!</h1>
+            <div class="ErrorInfoPanel">
+                <p class="ErrorDescription"
+                   th:text="${'Date: ' + timestamp}"></p>
+                <p class="ErrorDescription"
+                   th:text="${'Path: ' + path}"></p>
+                <p class="ErrorDescription"
+                   th:text="${'Error: ' + error}"></p>
+                <p class="ErrorDescription"
+                   th:text="${'Status: ' + status}"></p>
+                <p class="ErrorDescription"
+                   th:text="${'Message: ' + message}"></p>
+                <p class="ErrorDescription"
+                   th:text="${'Exception: ' + exception}"></p>
+                <!--<p class="ErrorDescription"
+                   th:text="${'Trace: ' + trace}"></p>-->
+            </div>
+        </main>
+    </body>
+</html>

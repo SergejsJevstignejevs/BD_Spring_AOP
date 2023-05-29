@@ -1,0 +1,44 @@
+@import url("../cleanBase.css");
+@import url("../colorVariables.css");
+
+.LoadingPage {
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: inherit;
+	height: inherit;
+	margin: auto;
+}
+
+.Circle {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-top: 10px solid var(--main-green);
+    border-right: 10px solid var(--accent-yellow);
+    border-bottom: 10px solid var(--main-green);
+    border-left: 10px solid var(--accent-yellow);
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.LoadingMessage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 250px;
+    height: 50px;
+    font-size: 1.25em;
+    color: var(--main-green);
+    background-color: var(--accent-yellow);
+    border: 2px solid var(--main-green);
+    border-radius: 8px;
+}

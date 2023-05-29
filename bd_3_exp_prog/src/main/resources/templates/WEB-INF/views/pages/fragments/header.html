@@ -1,0 +1,19 @@
+<header
+        xmlns:th="http://www.w3.org/1999/xhtml"
+        th:fragment="mainHeader"
+        class="MainHeader">
+    <ul>
+        <li >
+            <a th:href="@{/main}">Main</a>
+        </li>
+        <li >
+            <a th:href="@{/game}">Game</a>
+        </li>
+        <li >
+            <a th:href="@{/profile/{email}(email=${authentication.principal.username})}">Profile</a>
+        </li>
+        <li >
+            <a th:href="@{/logout}">Logout</a>
+        </li>
+    </ul>
+</header>

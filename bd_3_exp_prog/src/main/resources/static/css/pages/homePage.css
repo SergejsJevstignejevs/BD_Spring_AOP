@@ -1,0 +1,21 @@
+@import url("../cleanBase.css");
+@import url("../colorVariables.css");
+
+.HomePage{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	width: inherit;
+	height: inherit;
+	margin: auto;
+}
+
+.HomePage a{
+    font-size: 2em;
+	color: var(--main-green);
+}
+
+.HomePage p.VerticalBar {
+	font-size: 2em;
+	margin: 0 15px 0 15px;
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE aspectj PUBLIC "-//AspectJ//DTD//EN" "https://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+<aspectj>
+    <weaver
+            options="-verbose -showWeaveInfo">
+        <!-- only weave classes in our application-specific packages -->
+        <include within="com.sj..*"/>
+    </weaver>
+    <aspects>
+        <!-- aspect to weave -->
+        <!-- Spring aspect-->
+        <aspect name="com.sj.aspects.MonitoringAspect"/>
+        <!-- AspectJ aspect-->
+<!--        <aspect name="com.sj.aspects.MonitoringAspectJAspect"/>-->
+    </aspects>
+</aspectj>
